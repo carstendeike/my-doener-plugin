@@ -56,9 +56,9 @@ Dev containers have networking limitations depending on the host OS and Docker s
     "--name",
     "${localWorkspaceFolderBasename}",
     // Use network host mode if on Docker Engine on Linux or WSL 2 to allow full local network access and mDNS support
-    // "--network=host"
+    "--network=host"
     // Use a shared bridge network to allow to access other containers with their names (dns resolution). With the default bridge, dns resolution does not work (only ip:port).
-    "--network=matterbridge"
+    // "--network=matterbridge"
   ],
   // Publish the Matterbridge UI port on the Docker host (so http://localhost:8283 works even without VS Code port forwarding)
   "appPort": [8283],
