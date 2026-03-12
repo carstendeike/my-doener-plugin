@@ -29,6 +29,7 @@ Dev containers have networking limitations depending on the host OS and Docker s
   ************************************************* NOTICE *************************************************
 */
 {
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   // Name of the dev container
   "name": "Matterbridge Plugin Dev Container",
   // Use the pre-built image with Node+TypeScript
