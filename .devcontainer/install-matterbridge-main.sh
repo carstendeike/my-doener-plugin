@@ -8,10 +8,6 @@
 echo "Installing Matterbridge from the main branch..."
 set -e
 cd /
-if [ ! -d "/workspaces" ]; then
-  echo "Directory /workspaces does not exist. Exiting."
-  exit 1
-fi
 sudo chown -R node:node matterbridge
 sudo chmod g+s matterbridge
 sudo rm -rf matterbridge/* matterbridge/.[!.]* matterbridge/..?*
